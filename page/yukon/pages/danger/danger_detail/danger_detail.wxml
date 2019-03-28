@@ -1,0 +1,46 @@
+<view class="cw-view-column">
+  <view class="page-order">
+    <view class="page-order-1">
+      <view class="page-order-11" style="position:relative">
+        <view class="page-order-12"></view>
+        <view bindtap="notifyWb">
+          <text class="page-order-text-1">{{code}}</text>
+        </view>
+        <view class="page-order-13" bindtap="reload">
+          <text class="page-order-text-1">刷新</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='view-none' hidden='{{noneHidden}}'>
+      <text class="page-order-text-2">还没有数据.</text>
+    </view>
+
+    <view class="page-order-2">
+
+      <scroll-view scroll-top="{{scrollTop}}" style="height:{{scrollHeight}}px;" scroll-y class="cw-view-column" bindscrolltoupper="refresh" bindscrolltolower="loadmore" bindscroll="scroll">
+        <view class="item" wx:for="{{list}}">
+
+              <view class="icon-box" bindtap="goToDetail" data-id="{{item.Code}}" data-time="{{item.LastCompleteTime}}">
+            <image class="icon-box-img" style="width: 80rpx; height: 80rpx; " mode="aspectFit" src="../../../../../image/order.png"></image>
+            <view class="icon-box-ctn">
+              <view class="icon-box-title">{{item.Code}}</view>
+              <view class="icon-box-desc">{{item.Item}} 延期时间{{item.LastCompleteTime}}</view>
+            </view>
+          </view>
+
+        </view>
+
+      </scroll-view>
+
+      <view class="body-view">
+        <loading hidden="{{hidden}}" bindchange="loadingChange">
+          加载中...
+        </loading>
+      </view>
+
+      <!-- </view>  -->
+    </view>
+  </view>
+
+</view>

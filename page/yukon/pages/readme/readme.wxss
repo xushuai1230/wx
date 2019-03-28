@@ -1,0 +1,109 @@
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  background: #f5f5f5
+}
+
+.swiper_box {
+  /* width: 90%;
+  margin: 10% 5%;
+  height: 80%; */
+  width: 100%;
+  height: 100%;
+}
+
+.gd-txt-lg {
+  font-size: 48rpx;
+  width: 78%;
+  margin: 10rpx auto;
+  margin-top: 100rpx;
+}
+.gd-txt00 {
+  font-size: 28rpx;
+  width: 78%;
+  margin: 10rpx auto;
+}
+
+
+.gd-txt0 {
+  font-size: 28rpx;
+  width: 88%;
+  margin: 10rpx auto;
+}
+
+.gd-txt1 {
+  font-size: 28rpx;
+  width: 88%;
+  margin: 10rpx auto;
+}
+
+.gd-txt2 {
+  font-size: 35rpx;
+  width: 88%;
+  margin: 10rpx auto;
+  margin-top: 50rpx;
+}
+
+.gd-txt3 {
+  font-size: 28rpx;
+  width: 88%;
+  margin: 15rpx auto;
+}
+
+.gd-txt4 {
+  font-size: 28rpx;
+  width: 88%;
+  margin: 10rpx auto;
+  padding-left: 50rpx
+}
+
+
+.gd-txt5 {
+  font-size: 28rpx;
+  width: 88%;
+  margin: 10rpx auto;
+  margin-bottom: 80rpx;
+}
+
+.page0 {
+  width: 100%;
+  margin: 0% 0%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  position: absolute;
+}
+
+
+.page1 {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+.page-section-spacing {
+  height: 90%;
+  width: 90%;
+  margin: 5% auto;
+}
+
+.scroll-view_H {
+  white-space: nowrap;
+}
+
+.scroll-view-item {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+.scroll-view-item_H {
+  display: inline-block;
+  width: 100%;
+  height: 300rpx;
+}

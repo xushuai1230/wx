@@ -1,0 +1,29 @@
+<view class="swiper-container">
+  <scroll-view scroll-y="true" class="page0" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="page1" scroll-top="{{scrollTop}}">
+    <view class="page1">
+      <text class="gd-txt2">1.  企业“0”风险，“0”投入</text>
+      <text class="gd-txt3">永凯iMC采用SaaS模式，按需选择软件服务，即租即用，月/年付费模式，随时启用，随时中止。 企业不需要任何软件、硬件和人员的投入，管理升级 “0”负担。</text>
+      <text class="gd-txt2">2.	各种制造行业快速导入</text>
+      <text class="gd-txt3">永凯iMC提供丰富的行业模板选择，强大的排程规则库，支持各种制造企业快速导入使用。</text>
+      <text class="gd-txt2">3.	操作方便、简单易学、容易上手</text>
+      <text class="gd-txt3">永凯iMC操作非常简单、快捷。无需IT支持，计划员第一次使用只需1小时就可以独立操作，并完成基础设置，以后每天只需10分钟即可获得工序级生产计划和物料需求计划。</text>
+      <text class="gd-txt2">4.	移动应用，方便快捷</text>
+      <text class="gd-txt3">永凯iMC提供方便快捷的移动应用，可以在手机APP或微信上随时随地的企业生产情况，异常情况会及时报警，第一时间提供决策支持。</text>
+      <text class="gd-txt2">5.	多工序生产计划、物料计划及订单协同生产</text>
+      <text class="gd-txt3">永凯iMC帮助企业快速排定多工序生产计划和物料计划，同时综合考虑各种生产资源，充分挖掘企业潜力，优化生产计划，实现精益生产，确保订单的多工序协同生产。</text>
+      <text class="gd-txt2">6.	紧急插单、生产异常时，自动调整计划</text>
+      <text class="gd-txt3">当紧急插单或发生物料延迟、设备故障等生产异常时，永凯iMC会自动调整生产计划，并尽量保持原有计划不变，评估其影响，帮助企业做最合理的安排。</text>
+      <text class="gd-txt2">7.	快速回复订单交货期</text>
+      <text class="gd-txt3">能快速、直观、全面掌握所有订单的工序级生产计划排程，并自动快速调整所有计划排程，方便快速回复或调整产品交期。</text>
+      <text class="gd-txt2">8.	生产排程可视化显示</text>
+      <text class="gd-txt3">计划人员可以直观的看到所有订单在每道工序的生产排程，并在一张图表中方便的查看某一订单、某一产品或某一工序的计划排程及相互关联情况。</text>
+      <text class="gd-txt2">9.	产能评估可视化</text>
+      <text class="gd-txt3">可以实时的反映所有设备的使用负荷情况，帮助企业评估并充分利用产能，控制设备能耗，降低生产成本。</text>
+      <text class="gd-txt2">10.	厂内外的物料协同效应</text>
+      <text class="gd-txt3">JIT的实现在于生产计划的准确性，永凯iMC提供精确的生产计划和物料需求计划，考虑库存物料、以及在途采购材料供给情况，可以实现工序间、供应商和物流商的物料协同效应。</text>
+    </view>
+
+
+  </scroll-view>
+
+</view>

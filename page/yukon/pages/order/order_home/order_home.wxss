@@ -1,0 +1,66 @@
+.page-main {
+  position: relative;
+  height: 100%;
+}
+
+.page-verline {
+  height: 100%;
+  margin: auto auto;
+  width: 1px;
+  background: #ddd;
+}
+
+.page-out {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.page-out1 {
+  height: 280rpx;
+  border-bottom: 1px solid #ddd;
+  flex-direction: row;
+  display: flex;
+}
+
+.page-out2 {
+  height: 280rpx;
+  width: 50%;
+  flex-direction: column;
+  display: flex;
+  text-align: center
+}
+
+.page-out3 {
+  flex-direction: column;
+  display: flex;
+  margin-top:50rpx;
+}
+
+.page_text_h {
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+  display: block;
+  font-size: 28rpx;
+}
+
+.page_text_h2 {
+  margin-left: 0rpx;
+  margin-top: 0rpx;
+  display: block;
+  font-size: 30rpx;
+}
+.page_pic_h {
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  width: 42px;
+  height: 42px;
+}
+
+.page_pic_h2 {
+  width: 45px;
+  height: 45px;
+}
+

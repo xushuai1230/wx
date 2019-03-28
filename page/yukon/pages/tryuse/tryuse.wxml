@@ -1,0 +1,47 @@
+<view class="page-login-form0">
+  <view class="page-login-form">
+    <view class="cw-view-row">
+      <text class="cw-text-lg cw-text-primary cw-text-bold">快速体验</text>
+    </view>
+    <view class="cw-view-row">
+      <text class="text-tip">使用测试账号，即可快速体验预配置应用。</text>
+    </view>
+    <view class="margin-top20 margin-bottom20"></view>
+  </view>
+
+
+  <form bindsubmit="loginoperate">
+    <view class="page-login-form2">
+
+      <view class="cw-view-row">
+        <text class="name-input-label">企业名</text>
+        <text class="name-input-text name-tip">永凯iMC演示系统</text>
+      </view>
+      <view class="cw-line margin-top20 margin-bottom20"></view>
+
+      <view class="cw-view-row v-sd">
+        <text class="name-input-label txt-code">手机号</text>
+        <input class="input-code" type='number' placeholder="请输入手机号" bindinput="phoneInput" name="phone" />
+        <button type='primary' plain='true' class="btn-send {{is_show?'show':'hide'}}" bindtap='getCode'>获取验证码</button>
+        <button type='primary' plain='true' class="btn-send {{is_show?'hide':'show'}}">重新发送{{last_time}}秒</button>
+      </view>
+      <view class="cw-line margin-top20 margin-bottom20"></view>
+
+      <view class="cw-view-row">
+        <text class="name-input-label">验证码</text>
+        <input class="name-input-text" value='' bindinput="codeInput" placeholder="请输入验证码"  name="code" bindinput="codeInput" type='number' />
+      </view>
+
+      <view class=" margin-top20"></view>
+
+    </view>
+    <view class='v-pad-40'>
+      <button type='primary' form-type='submit'>体验</button>
+    </view>
+  </form>
+  <view class='v-more-tt'>
+    <text class="text-reg">点击注册，即表示你已阅读并同意</text>
+    <text class="text-tk" bindtap='goReadMe'>《相关条款》</text>
+  </view>
+
+</view>

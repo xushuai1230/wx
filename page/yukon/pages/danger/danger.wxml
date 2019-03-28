@@ -1,0 +1,72 @@
+<view class="page-main">
+
+  <view class="page-verline">
+  </view>
+
+  <view class="page-out">
+
+    <view class="page-out1">
+      <view class="page-out2" bindtap="goToShebei">
+
+        <view class="page-out4" hidden='{{source_numHidden}}'>
+          <view class="page-out5">
+            <view class="page-out6">
+              {{source_num}}
+            </view>
+          </view>
+        </view>
+        <view class="page-out3">
+          <view>
+            <image class="page_pic_h2" mode="aspectFit" src="../../../../image/od4.png"></image>
+          </view>
+          <view>
+            <text class="page_text_h2">设备异常</text>
+          </view>
+        </view>
+      </view>
+
+
+        <view class="page-out2" bindtap="goToWuliao">
+          <view class="page-out4" hidden='{{numHidden}}'>
+            <view class="page-out5">
+              <view class="page-out6">
+                {{num}}
+              </view>
+            </view>
+          </view>
+        <view class="page-out3">
+          <view>
+            <image class="page_pic_h2" mode="aspectFit" src="../../../../image/od3.png"></image>
+          </view>
+          <view>
+            <text class="page_text_h2">物料延期</text>
+          </view>
+        </view>
+     </view>
+ </view>
+    <view class="page-out1">
+      <view class="page-out2" bindtap="goToOrder">
+        <view class="page-out4" hidden='{{order_numHidden}}'>
+          <view class="page-out5">
+            <view class="page-out6">
+              {{order_num}}
+            </view>
+          </view>
+        </view>
+
+        <view class="page-out3">
+          <view>
+            <image class="page_pic_h2" mode="aspectFit" src="../../../../image/od1.png"></image>
+          </view>
+          <view>
+            <text class="page_text_h2">订单延期</text>
+          </view>
+        </view>
+
+    </view>
+
+  </view>
+
+</view>
+
+</view>

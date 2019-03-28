@@ -1,0 +1,114 @@
+<view class="swiper-container">
+  <scroll-view scroll-y="true" class="page0" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="page1" scroll-top="{{scrollTop}}">
+
+    <view class="page1">
+      <view class="page_11">
+
+        <!-- 机械行业 -->
+        <text class="gd-txt2" hidden="{{index == 1 ? false : true}}">机械五金行业-行业特点:</text>
+        <text class="gd-txt3" hidden="{{index == 1 ? false : true}}">1. 多数为多品种、小批量生产方式，很难形成批量生产，经常调换模具，导致大量的时间浪费。</text>
+        <text class="gd-txt3" hidden="{{index == 1 ? false : true}}">2. 制造工艺复杂 加工工艺路线具有很大的不确定性，一种零部件或产品可以有多种工艺，生产过程所需机器设备和工装夹具种类繁多。</text>
+        <text class="gd-txt3" hidden="{{index == 1 ? false : true}}">3. 加工零件繁多，需要的材料多，算料复杂，备料繁杂，车间现场往往需要填写大量领料单据，如工艺管理，还需填写大量的工艺移转单据。</text>
+        <text class="gd-txt3" hidden="{{index == 1 ? false : true}}">4. 质量管理困难，机械五金制造业企业由于主要是离散加工，产品的质量和生产率很大程度依赖于工人的技术水平。</text>
+        <text class="gd-txt3" hidden="{{index == 1 ? false : true}}">5. 委外加工频繁，产品零部件一般采用自制与委外加工相结合的方式。一般电镀、喷漆等特殊工艺会委托外部厂商加工。</text>
+        <text class="gd-txt3" hidden="{{index == 1 ? false : true}}">6. 生产计划复杂，产品结构复杂，制造工艺复杂，产品中各部件制造周期长短不一、产品加工工艺路线的不确定。</text>
+        <text class="gd-txt3" hidden="{{index == 1 ? false : true}}">7. 集中的大宗材料批量采购，库存压力大,财务压力更大。</text>
+        <text class="gd-txt3" hidden="{{index == 1 ? false : true}}">8. 机械五金行业现场管理难度大，原材料、在制品、半成品、成品、边角料都在现场堆积，造成通道堵塞、物料标示不清，往往会造成物料混用、产品混装、现场混乱。</text>
+
+        <text class="gd-txt6" hidden="{{index == 1 ? false : true}}">机械五金行业-解决方案:</text>
+        <text class="gd-txt3" hidden="{{index == 1 ? false : true}}">在充分考虑到机械五金行业企业生产管理特色及模式之后，永凯iMC机械五金行业解决方案以先进生产管理理念为核心，以灵活多变的强大功能为依托，通过库存管理、优化排程、现场控制帮助机械五金行业合理控制企业物流。销售计划、生产计划和采购计划有效集成，有机结合了机械五金业企业的现状，对机械五金行业企业有很好的适应性。永凯iMC通过精益生产，缩短了生产周期，提高了生产效率，降低了库存成本，加快了市场响应速度，减少了电子企业的订单交期压力，从而全面提高了企业服务水平和竞争力，帮助机械五金企业提升业绩，并在市场竞争中获得竞争优势，实现企业长期发展的目标。
+</text>
+
+        <!-- 电子制造行业 -->
+        <text class="gd-txt2" hidden="{{index == 0 ? false : true}}">电子制造行业-行业特点:</text>
+        <text class="gd-txt3" hidden="{{index == 0 ? false : true}}">1. 用户需求不断变化，产品的个性化需求逐步增强；</text>
+        <text class="gd-txt3" hidden="{{index == 0 ? false : true}}">2. 生产计划多变、产品结构复杂、零部件多而且委外加工、自制兼有，必须控制好进货提前期，保证既不耽误生产之需，又不造成库存积压，保证一个最合理的库存资金占用；</text>
+        <text class="gd-txt3" hidden="{{index == 0 ? false : true}}">3. 客户不仅要求低价、优质的产品，而且对交货期要求越来越高，必须对客户需求迅速做出响应，并在最短的时间内向客户交付高质量和低成本的产品；</text>
+        <text class="gd-txt3" hidden="{{index == 0 ? false : true}}">4. 生产任务多，产品的种类变化较多，非标准产品多，加工工序复杂，加工周期长，生产过程控制非常困难；</text>
+        <text class="gd-txt3" hidden="{{index == 0 ? false : true}}">5. 按订单组织生产的企业，由于很难预测订单在什么时候到来，而且产品设计和工艺过程经常改变，必须加强工程变更管理和订单管理；</text>
+        <text class="gd-txt3" hidden="{{index == 0 ? false : true}}">6. 工序之间要求一定量的在制品储存，在制品的有效管理是很突出的问题，原材料、半成品、产成品、废品频繁出入库。 </text>
+        <text class="gd-txt3" hidden="{{index == 0 ? false : true}}">7. 市场竞争愈演愈烈，不再只是产品的竞争，是产品加服务的竞争，为了给客户提供更好的服务，必须对销售过程进行有效的管理，提高其服务水平；</text>
+        <text class="gd-txt3" hidden="{{index == 0 ? false : true}}">8. 对于制造业来说，采购成本占整个产品成本的比重很大，必须进行精益采购，降低原材料库存成本。</text>
+        <text class="gd-txt3" hidden="{{index == 0 ? false : true}}">9. 订单交货期答复迟缓，订单执行情况无法及时掌握，服务效率低，影响企业整体形象。</text>
+
+        <text class="gd-txt6" hidden="{{index == 0 ? false : true}}">电子制造行业-解决方案:</text>
+        <text class="gd-txt3" hidden="{{index == 0 ? false : true}}">在充分考虑到电子行业企业生产管理特色及模式之后，永凯iMC电子行业解决方案以先进生产管理理念为核心，以灵活多变的强大功能为依托，通过库存管理、优化排程、现场控制帮助电子行业合理控制企业物流。销售计划、生产计划和采购计划有效集成，有机结合了电子业企业的现状，对电子电器行业企业有很好的适应性。永凯iMC通过精益生产，缩短了生产周期，提高了生产效率，降低了库存成本，加快了市场响应速度，减少了电子企业的订单交期压力，从而全面提高了企业服务水平和竞争力，帮助电子企业提升业绩，并在市场竞争中获得竞争优势，实现企业长期发展的目标。
+</text>
+
+        <!-- 印刷包装行业 -->
+        <text class="gd-txt2" hidden="{{index == 3 ? false : true}}">印刷包装行业-行业特点：</text>
+        <text class="gd-txt3" hidden="{{index == 3 ? false : true}}">1. 订单化生产，产品型号非常多，多订单批次、小订单批量，计划难度大。</text>
+        <text class="gd-txt3" hidden="{{index == 3 ? false : true}}">2. 不能实时准确的跟踪每一批订单的的生产进度，包括各工序的进度。</text>
+        <text class="gd-txt3" hidden="{{index == 3 ? false : true}}">3. 不能有效控制产品加工的过程。对于印刷各工序出现的问题，不能尽早的发现和防范。</text>
+        <text class="gd-txt3" hidden="{{index == 3 ? false : true}}">4. 刀模管理混乱，明明在库中有的或者是可以共用的刀模，开单时却不知道，造成重复出刀模的情况。不能准时交货。客户服务的一个最重要方面是准时且准确交付印刷产品，生产计划复杂。制定生产计划时必须考虑到材料需求、材料库存管理、后道工艺流程加工管理、智能生产排单等，确保客户印刷单的原材料数质量的保证，及时配给才能实现准时交货。</text>
+        <text class="gd-txt3" hidden="{{index == 3 ? false : true}}">5. 基础数据数量大，收集、整理、维护困难。</text>
+        <text class="gd-txt3" hidden="{{index == 3 ? false : true}}">6. 缺乏统一、快速、高效的生产信息化平台，信息的共享性较差，管理不透明。</text>
+        <text class="gd-txt3" hidden="{{index == 3 ? false : true}}">7. 对人员依赖较大，容易受人员经验等因素影响，不可避免地出现人为误差或波动，企业风险高，不利于企业的标准化管理。</text>
+        <text class="gd-txt3" hidden="{{index == 3 ? false : true}}">8. 生产管理缺乏前瞻性，缺乏有效的生产预警机制，无法控制由于人工失误、数据精度、计划不合理等因素对生产运作造成的影响。</text>
+        <text class="gd-txt3" hidden="{{index == 3 ? false : true}}">9. 缺乏实时、可靠、直观的各类生产数据汇总图表，对企业管理者高效决策产生一定影响。</text>
+        
+      
+
+        <text class="gd-txt6" hidden="{{index == 3 ? false : true}}">印刷包装行业-解决方案：</text>
+        <text class="gd-txt3" hidden="{{index == 3 ? false : true}}">在充分考虑到印刷包装行业企业生产管理特色及模式之后，永凯iMC印刷包装行业解决方案以先进生产管理理念为核心，以灵活多变的强大功能为依托，通过库存管理、优化排程、现场控制帮助设制造行业合理控制企业物流。销售计划、生产计划和采购计划有效集成，有机结合了印刷包装企业的现状，对印刷包装行业企业有很好的适应性。永凯iMC通过精益生产，缩短了生产周期，提高了生产效率，降低了库存成本，加快了市场响应速度，减少了印刷包装企业的订单交期压力，从而全面提高了企业服务水平和竞争力，帮助印刷包装企业提升业绩，并在市场竞争中获得竞争优势，实现企业长期发展的目标。</text>
+
+        <!-- 设备制造行业 -->
+        <text class="gd-txt2" hidden="{{index == 4 ? false : true}}">设备制造行业-行业特点:</text>
+        <text class="gd-txt3" hidden="{{index == 4 ? false : true}}">1. 在制品的控制：工艺复杂，从第一道工艺开始到最后一道工艺完成，其间所要经过的时间通常需要数天甚至数周。</text>
+        <text class="gd-txt3" hidden="{{index == 4 ? false : true}}">2. 标准工艺不易制定，难以掌握：设备、人员状况复杂，实际生产时应采取的工艺往往无法按标准工艺执行，而部分产品由于一些关键工艺受机器等资源的限制，或其他特殊情况导致存在着多种加工工艺流程并存的情况。</text>
+        <text class="gd-txt3" hidden="{{index == 4 ? false : true}}">3. 现场单据多，作业烦琐：机械行业加工零件多，需要的材料多，车间现场往往需要填写大量领料单据，如做工序管理，则还需要填写大量的工序移转单据，造成了人员困扰。</text>
+        <text class="gd-txt3" hidden="{{index == 4 ? false : true}}">4. 委外加工不易管理：委外加工或者客户需求批量大时，需要把部分订单委外加工以缓解压力，传统手工作业管理往往无法应付如此复杂的状况，造成了工作难度增加。</text>
+        <text class="gd-txt3" hidden="{{index == 4 ? false : true}}">5. 生产状况复杂，现场不易掌控：实际生产过程中，往往有很多不确定因素，如产品的重修返工，材料、半成品的报废等等，管理人员很难及时掌控现场状况。</text>
+        <text class="gd-txt3" hidden="{{index == 4 ? false : true}}">6. 项目型接单生产方式难以掌控：手工作业时面对庞大的材料清单，复杂的生产状况等，常常造成交货延迟，库存积压，加工失误等等问题。</text>
+        <text class="gd-txt3" hidden="{{index == 4 ? false : true}}">7. 产品结构及设计变更的管理：手工作业时面对庞大的材料清单，复杂的生产状况等，常常造成交货延迟，库存积压，加工失误等等问题，由于工程变更缺乏科学规范的管理，经常出现一些物料的停滞，造成企业的库存积压。</text>
+
+        <text class="gd-txt6" hidden="{{index == 4 ? false : true}}">设备制造行业-解决方案:</text>
+        <text class="gd-txt3" hidden="{{index == 4 ? false : true}}">在充分考虑到设备制造行业企业生产管理特色及模式之后，永凯iMC设备制造行业解决方案以先进生产管理理念为核心，以灵活多变的强大功能为依托，通过库存管理、优化排程、现场控制帮助设备制造行业合理控制企业物流。销售计划、生产计划和采购计划有效集成，有机结合了设备制造企业的现状，对设备制造行业企业有很好的适应性。永凯iMC通过精益生产，缩短了生产周期，提高了生产效率，降低了库存成本，加快了市场响应速度，减少了设备制造企业的订单交期压力，从而全面提高了企业服务水平和竞争力，帮助设备制造企业提升业绩，并在市场竞争中获得竞争优势，实现企业长期发展的目标。</text>
+
+        <!-- 纺织服装行业 -->
+        <text class="gd-txt2" hidden="{{index == 2 ? false : true}}">纺织服装行业-行业特点:</text>
+        <text class="gd-txt3" hidden="{{index == 2 ? false : true}}">1. 市场稳定性差：服装市场销售具有不稳定性，在完成销售之前所有的人包括设计师都无法准确计算出产品的市场销售情况。一旦不符合市场品味大量产品就成为企业累赘。销售的偶然性和季节性使得库存控制变得非常困难，再小的批量也有压货的风险。</text>
+        <text class="gd-txt3" hidden="{{index == 2 ? false : true}}">2. 产品生命周期短。受季节性影响大，一般服装进入市场到退出市场，平均寿命只有2-3周。且服装生产设计的面料辅料众多，新技术、新材料的运用日新月异。</text>
+        <text class="gd-txt3" hidden="{{index == 2 ? false : true}}">3. 小批量、多款式、多属性。受市场需求等方面因素的影响，服装制造企业的生产类型逐步由大批量、少款式、长周期向小批量、多款式、短周期方向发展。由于服装产品的款式、颜色、尺码、面料、年份、季节、品牌、价格等属性众多，生产管理难度大。并且，随着市场需求的变化，大量定制化出现，给生产管理和资源整合带来更高的难度。</text>
+        <text class="gd-txt3" hidden="{{index == 2 ? false : true}}">4. 生产工序多，工艺编排复杂。服装生产通常涉及几十道甚至上百道工序，生产管理环节较长。在完成服装生产面辅料的准备和生产技术准备后，需要进行排料、裁剪、缝制、熨烫等多个生产阶段，每个生产阶段又有各种不同且复杂的工艺。
+</text>
+        <text class="gd-txt3" hidden="{{index == 2 ? false : true}}">5. 劳动密集型生产加工。受工艺等方面因素的影响，大量的工序还是需要使用人力完成，因此复杂制造行业属于典型的劳动密集型产品，生产过程的自动化、智能化的实现难度高。</text>
+        <text class="gd-txt3" hidden="{{index == 2 ? false : true}}">6. 生产组织方式多样化。服装行业大多根据产品的不同来组织生产，常用的生产模式：离散式、流程式和混合式。离散式按照制衣专业分成生产组布局，流程式按照流水线布局，混合式则是二者结合的特点。</text>
+        <text class="gd-txt3" hidden="{{index == 2 ? false : true}}">7. 插单频繁。服装生产的特点是款式多、交货期进，因此经常出现插单的现象。给生产排产、排产变更造成很大的管理难度，因此对于生产变更需要更大的灵活性和快速反馈。</text>
+        <text class="gd-txt3" hidden="{{index == 2 ? false : true}}">8. 根据销售预测生产，多SKU,库存管控严格。服装行业很容易出现库存积压，且不易处理。对于服装制造企业而言，销售的预测。生产的节拍。生产计划的制定等直接关系到库存积压与否，因此对于包括原材料在内的所有库存都需要严格管控。
+</text>
+
+        <text class="gd-txt6" hidden="{{index == 2 ? false : true}}">纺织服装行业-解决方案:</text>
+        <text class="gd-txt3" hidden="{{index == 2 ? false : true}}">在充分考虑到纺织服装行业企业生产管理特色及模式之后，永凯iMC纺织服装行业解决方案以先进生产管理理念为核心，以灵活多变的强大功能为依托，通过库存管理、优化排程、现场控制帮助设备制造行业合理控制企业物流。销售计划、生产计划和采购计划有效集成，有机结合了设备制造企业的现状，对纺织服装行业企业有很好的适应性。永凯iMC通过精益生产，缩短了生产周期，提高了生产效率，降低了库存成本，加快了市场响应速度，减少了纺织服装企业的订单交期压力，从而全面提高了企业服务水平和竞争力，帮助纺织服装企业提升业绩，并在市场竞争中获得竞争优势，实现企业长期发展的目标。</text>
+
+        <text class="gd-txt6">操作说明:</text>
+        <text class="gd-txt3">1.打开永凯iMC,按注册指引注册登录;</text>
+        <text class="gd-txt3">2.添加销售订单:订单-销售订单-添加;</text>
+        <text class="gd-txt3">3.添加订单后点击排程按钮即可生成生产计划和物料计划;</text>
+        <text class="gd-txt3">4.查看制造订单:订单-制造订单,可查看你所增加的订单相关的制造订单;</text>
+        <text class="gd-txt3">5.查看物料采购计划:订单-采购订单,会有两种情况:</text>
+        <text class="gd-txt4">  1).库存够用,不会产生采购订单;</text>
+        <text class="gd-txt4">  2).库存不够,会产生扣车库存后的采购订单;</text>
+        <text class="gd-txt5">6.查看供应商供货,点击即可查看相关物料供应商的供料计划;</text>
+      </view>
+
+
+
+    </view>
+
+  </scroll-view>
+
+  <view class="btns">
+    <text bindtap='goHome' class='btn-text btn-home' hidden="{{ifHidden}}">进入首页</text>
+  </view>
+
+  <view class="checks" bindtap='remindme'>
+    <view class="checks-bx" hidden="{{ifHidden}}">
+      <image src="../../../../image/yes.png" mode="scaleToFill" class='chk-img' hidden="{{checkMeHidden}}" />
+    </view>
+    <label class="checkbox min-chek" hidden="{{ifHidden}}">
+      不再显示
+    </label>
+  </view>
+
+</view>

@@ -1,0 +1,104 @@
+<view class="cw-view-column">
+  <view class="page-order">
+    <view class="page-order-1">
+      <view class="page-order-11">
+        <view class="page-order-12"></view>
+        <view>
+          <text class="page-order-text-1">报工</text>
+        </view>
+
+      </view>
+    </view>
+
+    <form bindsubmit="addoperate">
+      <view class="page-order-2">
+        <view class="cw-view-column">
+
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm text-gray">ID</text>
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm text-gray">{{id}}</text>
+          </view>
+          <view class="cw-view-row cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm text-gray">代码</text>
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm text-gray">{{code}}</text>
+          </view>
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm text-gray">物品</text>
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm text-gray">{{item}}</text>
+          </view>
+          <view class="cw-view-row cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm text-gray">状态</text>
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm text-gray">{{status}}</text>
+          </view>
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm text-gray">订单</text>
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm text-gray">{{order}}</text>
+          </view>
+
+          <view class="cw-view-row cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm text-gray">计划数量</text>
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm text-gray">{{plannum}}</text>
+          </view>
+
+
+          <view class="cw-view-row  cw-view-margin-top-sm cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm cw-text-bold">开始时间</text>
+            <view class="cw-view-margin-left-sm cw-view-margin-top-sm cw-view-row" style='width:500rpx'>
+
+
+              <picker mode="date" value="{{date}}" class='v-picker' start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                <view class="picker">
+                  {{date}}
+                </view>
+              </picker>
+
+              <picker mode="time" value="{{time}}" class='v-picker cw-view-margin-left-sm' start="09:01" end="21:01" bindchange="bindTimeChange">
+                <view class="picker">
+                  {{time}}
+                </view>
+              </picker>
+
+            </view>
+          </view>
+
+          <view class="cw-view-row  cw-view-margin-top-sm cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm cw-text-bold">结束时间</text>
+            <view class="cw-view-margin-left-sm cw-view-margin-top-sm cw-view-row" style='width:500rpx'>
+
+
+              <picker mode="date" value="{{date}}" class='v-picker' start="2015-09-01" end="2017-09-01" bindchange="bindDateChange2">
+                <view class="picker">
+                  {{date2}}
+                </view>
+              </picker>
+
+              <picker mode="time" value="{{time}}" class='v-picker cw-view-margin-left-sm' start="09:01" end="21:01" bindchange="bindTimeChange2">
+                <view class="picker">
+                  {{time2}}
+                </view>
+              </picker>
+            </view>
+          </view>
+
+          <view class="cw-view-row cw-view-margin-top-sm cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm cw-text-bold">成品数量</text>
+            <input class="weui-input cw-view-margin-left-sm" placeholder="输入成品数量" style='margin-top:8rpx' name="c_num" type="number" value='' />
+          </view>
+
+          <view class="cw-view-row cw-view-margin-top-sm cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm cw-text-bold">废品数量</text>
+            <input class="weui-input cw-view-margin-left-sm" placeholder="输入废品数量" style='margin-top:8rpx' name="f_num" type="number" value='' />
+          </view>
+
+          <view style="width:30%;margin:20rpx auto">
+            <button form-type='submit' class="login-btn">报工</button>
+          </view>
+
+        </view>
+      </view>
+    </form>
+
+
+  </view>
+
+</view>

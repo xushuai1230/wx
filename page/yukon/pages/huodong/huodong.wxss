@@ -1,0 +1,7 @@
+/* page/yukon/pages/huodong/huodong.wxss */
+.page-text-center{
+  margin: auto auto;
+  height: 100%;
+  padding-top: 200rpx;
+  text-align: center;
+}

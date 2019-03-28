@@ -1,0 +1,140 @@
+<scroll-view scroll-y="true" style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+
+  <view class="swiper-container">
+    <swiper class="swiper_box" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+      <block wx:for="{{banners}}" wx:key="id">
+        <swiper-item>
+          <image bindtap="tapBanner" lazy-load="true" data-id="{{item.businessId}}" src="{{item.picUrl}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="dots">
+      <block wx:for="{{banners}}" wx:key="unique">
+        <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+      </block>
+    </view>
+  </view>
+
+
+  <view class="page-main">
+
+    <view class="page-lines">
+      <view class="page-verline">
+      </view>
+      <view class="page-verline">
+      </view>
+    </view>
+
+
+    <view class="page-out">
+
+      <view class='page-brand-1'>
+        <text>永凯iMC</text>
+      </view>
+
+      <view class="page-out1">
+        <view class="page-out2" bindtap="goToHome">
+          <view class="page-out3">
+            <view>
+              <image class="page_pic_h2" mode="aspectFit" src="../../../../image/guanli.png"></image>
+            </view>
+            <view>
+              <text class="page_text_h2">管理</text>
+            </view>
+          </view>
+        </view>
+        <view class="page-out2" bindtap="goToOrder">
+          <view class="page-out3">
+            <view>
+              <image class="page_pic_h2" mode="aspectFit" src="../../../../image/h_order.png"></image>
+            </view>
+            <view>
+              <text class="page_text_h2">订单</text>
+            </view>
+          </view>
+        </view>
+        <view class="page-out2" bindtap="goToSource">
+          <view class="page-out3">
+            <view>
+              <image class="page_pic_h2" mode="aspectFit" src="../../../../image/source.png"></image>
+            </view>
+            <view>
+              <text class="page_text_h2">资源</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="page-out1">
+        <view class="page-out2" bindtap="goToVentor">
+          <view class="page-out3">
+            <view>
+              <image class="page_pic_h2" mode="aspectFit" src="../../../../image/gongys.png"></image>
+            </view>
+            <view>
+              <text class="page_text_h2">供应商</text>
+            </view>
+          </view>
+        </view>
+        <view class="page-out2" bindtap="goToWuliao">
+          <view class="page-out3">
+            <view>
+              <image class="page_pic_h2" mode="aspectFit" src="../../../../image/wuliao.png"></image>
+            </view>
+            <view>
+              <text class="page_text_h2">物料</text>
+            </view>
+          </view>
+        </view>
+        <view class="page-out2" bindtap="goToCustomer">
+          <view class="page-out3">
+            <view>
+              <image class="page_pic_h2" mode="aspectFit" src="../../../../image/yonghu.png"></image>
+            </view>
+            <view>
+              <text class="page_text_h2">客户</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="page-out1">
+        <view class="page-out2" bindtap="goToBaogong">
+          <view class="page-out3">
+            <view>
+              <image class="page_pic_h2" mode="aspectFit" src="../../../../image/baogong.png"></image>
+            </view>
+            <view>
+              <text class="page_text_h2">报工</text>
+            </view>
+          </view>
+        </view>
+        <view class="page-out2" bindtap="goToYujing">
+          <view class="page-out3">
+            <view>
+              <image class="page_pic_h2" mode="aspectFit" src="../../../../image/yjing.png"></image>
+            </view>
+            <view>
+              <text class="page_text_h2">预警</text>
+            </view>
+          </view>
+        </view>
+        <view class="page-out2" bindtap="goToZhiling">
+          <view class="page-out3">
+            <view>
+              <image class="page_pic_h2" mode="aspectFit" src="../../../../image/zl.png"></image>
+            </view>
+            <view>
+              <text class="page_text_h2">在制品</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+
+
+  </view>
+
+
+</scroll-view>

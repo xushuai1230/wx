@@ -1,0 +1,143 @@
+.page-order {
+  margin: 20rpx;
+  margin-bottom: 0rpx;
+}
+
+.page-order-1 {
+  border-bottom: 1rpx solid #ccc;
+  padding-left: 10rpx;
+  padding-top: 10rpx;
+  padding-bottom: 15rpx;
+}
+
+.page-order-11 {
+  flex-direction: row;
+  display: flex;
+}
+
+.page-order-12 {
+  width: 0rpx;
+  display: block;
+  margin-right: 6rpx;
+}
+
+.page-order-13 {
+  position: absolute;
+  right: 0rpx;
+  padding: 10rpx;
+  top: -5rpx;
+}
+
+.page-order-14 {
+  position: absolute;
+  right: 100rpx;
+  padding: 10rpx;
+  top: -5rpx;
+  width: 170rpx;
+}
+
+.page-order-text-2 {
+  font-weight: 500;
+  border: 1rpx solid #ddd;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+  border-radius: 15rpx;
+  background: #1aad19;
+  color: #fff;
+  font-size: 25rpx;
+}
+
+.page-order-15 {
+  position: absolute;
+  background: #ddd;
+  right: 340rpx;
+  top: -5rpx;
+  width: 2rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+}
+
+.page-order-text-1 {
+  color: #333;
+  font-weight: 600;
+}
+
+
+.page-order-2 {
+  padding-top: 0rpx;
+  padding-bottom: 30rpx;
+}
+
+.page-order-21 {
+  background-color: #378876;
+  width: 100rpx;
+  height: 40rpx;
+  border-radius: 10rpx;
+}
+
+.page-order-22 {
+  background-color: #59b99f;
+  width: 100rpx;
+  border-radius: 10rpx;
+  height: 40rpx;
+}
+
+.page-order-23 {
+  background-color: #aadcd0;
+  width: 100rpx;
+  border-radius: 10rpx;
+  height: 40rpx;
+}
+
+.page-order-24 {
+  background-color: #edd16c;
+  width: 100rpx;
+  border-radius: 10rpx;
+  height: 40rpx;
+}
+
+.name-input-text {
+  border: 1rpx solid #ddd;
+  border-radius: 20rpx;
+  padding-left: 20rpx;
+}
+
+.input-place-name{
+  font-size: 25rpx;
+}
+
+.icon-box{
+  margin-bottom: 0rpx;
+   padding: 10rpx 0 10rpx 15rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #ccc;
+}
+.icon-box-img{
+  margin-right: 16rpx;
+}
+.icon-box-ctn{
+  flex-shrink: 100;
+}
+.icon-box-title{
+   font-size: 32rpx; 
+  font-weight: 600;
+  color: #333;
+}
+.icon-box-desc{
+  margin-top: 8rpx;
+  font-size: 25rpx;
+  color: #333;
+}
+
+.icon-small-wrp{
+  margin-right: 46rpx;
+  width: 93px;
+  height: 93px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

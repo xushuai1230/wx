@@ -1,0 +1,129 @@
+<view class="cw-view-column">
+  <view class="page-order">
+    <view class="page-order-1">
+      <view class="page-order-11">
+        <view class="page-order-12"></view>
+        <view>
+          <text class="page-order-text-1">订单详情</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="page-order-2">
+      <view class="cw-view-column">
+
+        <view class="view-item">
+          <text class="cw-text-md cw-text-bold cw-view-padding-left-sm">订单号</text>
+          <text class="cw-text-sm cw-view-padding-left-sm">{{code}}</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-text-bold cw-view-padding-left-sm">客户</text>
+          <text class="cw-text-sm cw-view-padding-left-sm">{{kehu}}</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-text-bold cw-view-padding-left-sm">产品号</text>
+          <text class="cw-text-sm cw-view-padding-left-sm">{{product}}</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-text-bold cw-view-padding-left-sm">数量</text>
+          <text class="cw-text-sm cw-view-padding-left-sm">{{num}}</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-text-bold cw-view-padding-left-sm">类型</text>
+          <text class="cw-text-sm cw-view-padding-left-sm">{{m_type}}</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-text-bold cw-view-padding-left-sm">交货期</text>
+          <text class="cw-text-sm cw-view-padding-left-sm">{{time}}</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-text-bold cw-view-padding-left-sm">状态</text>
+          <text class="cw-text-sm cw-view-padding-left-sm">{{status}}</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-text-bold cw-view-padding-left-sm">备注</text>
+          <text class="cw-text-sm cw-view-padding-left-sm">{{mark}}</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-text-bold cw-view-padding-left-sm">计划开始时间</text>
+          <text class="cw-text-sm cw-view-padding-left-sm">{{begin_time}}</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-text-bold cw-view-padding-left-sm">计划完成时间</text>
+          <text class="cw-text-sm cw-view-padding-left-sm">{{end_time}}</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-text-bold cw-view-padding-left-sm">是否逾期</text>
+          <text class="cw-text-md cw-view-padding-left-sm">{{if_pass}}</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-text-bold cw-view-padding-left-sm">所有工单</text>
+        </view>
+
+        <view class="item" wx:for="{{list}}">
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm cw-text-bold  margin-lf-100 ">工单{{index}}</text>
+          </view>
+
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm cw-text-bold  margin-lf-100 ">工作代码 {{item.PropertyValueMap.code}}</text>
+
+            <text class="cw-text-sm cw-text-bold text-underline margin-lf-100" bindtap='goDetail' data-id='{{item.PropertyValueMap.ID}}'  
+             data-code='{{item.PropertyValueMap.code}}'data-endtime='{{item.PropertyValueMap.PlantEndTime}}'  data-begintime='{{item.PropertyValueMap.PlantBeginTime}}'  data-item='{{item.PropertyValueMap.Item}}'  data-plannum='{{item.PropertyValueMap.PlantAmount}}' >查看</text>
+          </view>
+
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">数量</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.PropertyValueMap.PlantAmount}}</text>
+          </view>
+
+        <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">物品名</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.PropertyValueMap.Item}}</text>
+          </view>
+        
+
+        <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">资源名</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.PropertyValueMap.PlantAssResource}}</text>
+          </view>
+
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">前置开始时间</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.PropertyValueMap.PreSetBeginTime}}</text>
+          </view>
+
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm margin-lf-100">前置结束时间</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.PropertyValueMap.PreSetEndTime}}</text>
+          </view>
+          
+          <view class="cw-view-row cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">计划开始时间</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.PropertyValueMap.PlantBeginTime}}</text>
+          </view>
+          
+          <view class="cw-view-row cw-view-border-bottom-sm cw-view-margin-vertical cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">计划结束时间</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.PropertyValueMap.PlantEndTime}}</text>
+          </view>
+
+
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+</view>

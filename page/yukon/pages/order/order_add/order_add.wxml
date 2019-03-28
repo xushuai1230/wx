@@ -1,0 +1,77 @@
+<view class="cw-view-column">
+  <view class="page-order">
+    <view class="page-order-1">
+      <view class="page-order-11">
+        <view class="page-order-12"></view>
+        <view>
+          <text class="page-order-text-1">订单新增</text>
+        </view>
+        <view class="page-order-13" bindtap="scanCode">
+          <text class="page-order-text-1">扫码添加</text>
+        </view>
+      </view>
+    </view>
+
+    <form bindsubmit="addoperate">
+      <view class="page-order-2">
+        <view class="cw-view-column">
+
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm cw-text-bold">代码</text>
+            <input class="weui-input cw-view-margin-left-sm" style='margin-top:8rpx' placeholder="代码" name="code" type="text" value='{{code}}' />
+          </view>
+
+          <view class="cw-view-row cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm cw-text-bold">物料</text>
+            <view class="cw-view-margin-left-sm cw-view-margin-top-sm" style='width:500rpx'>
+              <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view>{{array[index]}}</view>
+              </picker>
+            </view>
+          </view>
+
+          <view class="cw-view-row cw-view-margin-top-sm cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm cw-text-bold">数量</text>
+            <input class="weui-input cw-view-margin-left-sm" placeholder="数量" style='margin-top:8rpx' name="num" type="number" value='200' />
+          </view>
+
+          <view class="cw-view-row cw-view-margin-top-sm cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm cw-text-bold">优先级</text>
+            <input class="weui-input cw-view-margin-left-sm" placeholder="优先级" style='margin-top:8rpx' name="priority" type="number" value='1' />
+          </view>
+
+
+           <view class="cw-view-row  cw-view-margin-top-sm cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm" hidden='{{insertTimeHidden}}'>
+            <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm cw-text-bold">交货时间</text>
+            <view class="cw-view-margin-left-sm cw-view-margin-top-sm cw-view-row" style='width:500rpx'>
+
+              <picker mode="date" value="{{date}}" class='v-picker' start="2018-04-19" end="2020-04-01" bindchange="bindDateChange">
+                <view class="picker">
+                  {{date}}
+                </view>
+              </picker>
+
+              <picker mode="time" value="{{time}}" class='v-picker cw-view-margin-left-sm' start="09:01" end="21:01" bindchange="bindTimeChange">
+                <view class="picker">
+                  {{time}}
+                </view>
+              </picker>
+
+            </view>
+          </view>
+
+
+          <view style="width:30%;margin:auto auto">
+            <button form-type='submit' class="login-btn">新增</button>
+          </view>
+
+
+
+        </view>
+      </view>
+    </form>
+
+
+  </view>
+
+</view>

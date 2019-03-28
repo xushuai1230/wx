@@ -1,0 +1,16 @@
+1.guide文字2端对齐 按钮变小 第2截图换
+2.首页9宫格变小，一屏显示
+
+
+3.忘记密码
+4.微信授权登录
+5.微信获取手机号
+
+
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
+flex-grow: 1;
+justify-content: center;
+transform: translate(-50%, -50%);

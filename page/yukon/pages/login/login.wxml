@@ -1,0 +1,43 @@
+<view class="page-login-form0">
+
+  <view class="page-login-form">
+    <view class="cw-view-row">
+      <text class="cw-text-lg cw-text-primary cw-text-bold">用注册手机号登录</text>
+    </view>
+    <view class="margin-top20 margin-bottom20"></view>
+  </view>
+
+  <form bindsubmit="loginoperate">
+    <view class="page-login-form2">
+
+      <view class="cw-view-row" hidden='true'>
+        <text class="name-input-label2">公司代码</text>
+        <input class="name-input-text2" value='' placeholder="请输入公司代码" name="renter" type="text" />
+      </view>
+
+      <view class="cw-view-row">
+        <text class="name-input-label">账号</text>
+        <input class="name-input-text" value='' placeholder="请输入手机号" name="urid" type="text" />
+      </view>
+
+      <view class="cw-line margin-top20 margin-bottom20"></view>
+
+      <view class="cw-view-row">
+        <text class="name-input-label">密码</text>
+        <input class="name-input-text" value='' placeholder="请输入密码" name="pswd" password="true" />
+      </view>
+      <view class="margin-top20"></view>
+
+    </view>
+
+    <view class='v-pad-40'>
+      <button type='primary' form-type='submit'>登 录</button>
+    </view>
+  </form>
+
+  <view class='v-more-tt'>
+    <text class="text-reg" bindtap='goReg'>注册新用户</text>
+    <text class="text-in" bindtap='goIn'>快速体验</text>
+  </view>
+
+</view>

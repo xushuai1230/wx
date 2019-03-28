@@ -1,0 +1,100 @@
+.page-order{
+  margin: 20rpx;
+  margin-bottom: 0rpx;
+}
+
+.page-order-1{
+  border-bottom: 1rpx solid #cccccc;
+  padding-left: 10rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  position: relative;
+}
+
+.page-order-11{
+  flex-direction:row;
+  display:flex;
+}
+
+.page-order-12{
+    background-color: #333333;
+    width: 6rpx;
+    display: block;
+    margin-right: 6rpx;
+}
+
+.page-order-13{
+  position: absolute;
+  right: 20rpx;
+  padding: 10rpx;
+  top:5rpx;
+}
+
+.page-order-text-1{
+    color: #333333;
+    font-weight: 600;
+}
+
+.page-order-2{
+  padding-top: 0rpx;
+  padding-bottom: 30rpx;
+}
+
+.page-order-21{
+    background-color: #378876;
+    width: 100rpx;
+    height: 40rpx;
+    border-radius: 10rpx;
+}
+
+.page-order-22{
+    background-color: #59B99F;
+    width: 100rpx;
+    border-radius: 10rpx;
+    height: 40rpx;
+}
+
+.page-order-23{
+    background-color: #AADCD0;
+    width: 100rpx;
+    border-radius: 10rpx;
+    height: 40rpx;
+}
+
+.page-order-24{
+    background-color: #edd16c;
+    width: 100rpx;
+    border-radius: 10rpx;
+    height: 40rpx;
+}
+
+.login-btn{
+    margin: 3rpx 0rpx 3rpx 0rpx;
+    background-color: #028002;
+    width: 120rpx;
+    display: block;
+    height: 55rpx;
+    line-height:55rpx;
+    text-align: center;
+    font-size: 25rpx;
+    color: white;
+}
+
+.view-item{
+  border-bottom: 1rpx solid #cccccc;
+  margin: 0 5rpx;
+  height: 75rpx;
+  line-height: 75rpx;
+}
+
+.v-picker{
+flex-direction:row;
+display:flex;
+font-size: 30rpx;
+}
+
+.text-gray{
+  color: #666;
+  font-size: 25rpx;
+}
+

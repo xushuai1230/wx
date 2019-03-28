@@ -1,0 +1,47 @@
+<view class="page-main">
+
+  <view class="page-verline">
+  </view>
+
+  <view class="page-out">
+
+    <view class="page-out1">
+      <view class="page-out2" bindtap="goToToday">
+        <view class="page-out3">
+          <view>
+            <image class="page_pic_h2" mode="aspectFit" src="../../../../image/od1.png"></image>
+          </view>
+          <view>
+            <text class="page_text_h2">当天供料计划</text>
+          </view>
+        </view>
+      </view>
+      <view class="page-out2" bindtap="goToTomorrow">
+        <view class="page-out3">
+          <view>
+            <image class="page_pic_h2" mode="aspectFit" src="../../../../image/od4.png"></image>
+          </view>
+          <view>
+            <text class="page_text_h2">明天供料计划</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="page-out1">
+      <view class="page-out2" bindtap="goToNext">
+        <view class="page-out3">
+          <view>
+            <image class="page_pic_h2" mode="aspectFit" src="../../../../image/od3.png"></image>
+          </view>
+          <view>
+            <text class="page_text_h2">3-5天供料计划</text>
+          </view>
+        </view>
+      </view>
+     
+    </view>
+
+  </view>
+
+</view>

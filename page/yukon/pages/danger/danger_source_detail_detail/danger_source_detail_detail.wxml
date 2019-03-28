@@ -1,0 +1,50 @@
+<view class="cw-view-column">
+  <view class="page-order">
+    <view class="page-order-1">
+      <view class="page-order-11">
+        <view class="page-order-12"></view>
+        <view>
+          <text class="page-order-text-1">资源详情</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="page-order-2">
+      <view class="cw-view-column">
+        <view class="view-item">
+          <text class="cw-text-md cw-view-margin-left-sm cw-text-bold">资源名</text>
+          <text class="cw-text-sm cw-view-margin-left-sm">{{name}}</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-view-margin-left-sm  cw-text-bold">状态</text>
+          <text class="cw-text-sm cw-view-margin-left-sm ">{{status}}</text>
+        </view>
+
+
+        <view class="view-item">
+          <text class="cw-text-md cw-view-margin-left-sm  cw-text-bold">正在加工</text>
+          <text class="cw-text-sm cw-view-margin-left-sm ">{{using}}</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-view-margin-left-sm  cw-text-bold">负荷率</text>
+          <text class="cw-text-sm cw-view-margin-left-sm ">{{num}}</text>
+        </view>
+
+        <view class="view-item" hidden='true'>
+          <text class="cw-text-md cw-view-margin-left-sm  cw-text-bold">运行时间</text>
+          <text class="cw-text-sm cw-view-margin-left-sm ">{{time}}</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-view-margin-left-sm  cw-text-bold">异常信息</text>
+          <text class="cw-text-sm cw-view-margin-left-sm">{{remark}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view style="display: {{btnhide}}">
+    <button class="btn-login recovery" type="primary" data-id='{{id}}' bindtap='recovery'>恢复</button>
+  </view>
+</view>

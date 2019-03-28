@@ -1,0 +1,77 @@
+<view class="page-login-form0">
+  <view class="page-login-form">
+    <view class="cw-view-row">
+      <text class="cw-text-lg cw-text-primary cw-text-bold">新用户注册-第二步</text>
+    </view>
+    <view class="cw-view-row">
+      <text class="text-tip">借助永凯云，可以通过小程序快速完成iMC排程。</text>
+    </view>
+    <view class="margin-top20 margin-bottom20"></view>
+  </view>
+
+  <form bindsubmit="regoperate">
+    <view class="page-login-form2">
+
+      <view class="cw-view-row">
+        <text class="name-input-label">企业简称</text>
+        <input class="name-input-text" bindinput="companyInput" maxlength='15' placeholder="请输入企业简称" name="comys" type="text" />
+      </view>
+      <view class="cw-line margin-top20 margin-bottom20"></view>
+
+      <view class="cw-view-row">
+        <text class="name-input-label">企业全名</text>
+        <input class="name-input-text" bindinput="companyInput" maxlength='15' placeholder="请输入企业全名" name="comy" type="text" />
+      </view>
+      <view class="cw-line margin-top20 margin-bottom20"></view>
+
+ <view class="cw-view-row">
+        <text class="name-input-label">职称</text>
+        <input class="name-input-text" bindinput="companyInput" maxlength='15' placeholder="请输入职称" name="zhicheng" type="text" />
+      </view>
+      <view class="cw-line margin-top20 margin-bottom20"></view>
+
+       <view class="cw-view-row">
+        <text class="name-input-label">企业地址</text>
+        <input class="name-input-text" bindinput="companyInput" maxlength='15' placeholder="请输入企业地址" name="address" type="text" />
+      </view>
+      <view class="cw-line margin-top20 margin-bottom20"></view>
+
+
+       <view class="cw-view-row">
+        <text class="name-input-label">企业电话</text>
+        <input class="name-input-text" bindinput="companyInput" maxlength='15' placeholder="请输入企业电话" name="tel" type="text" />
+      </view>
+      <view class="cw-line margin-top20 margin-bottom20"></view>
+
+      <view class="cw-view-row">
+        <text class="name-input-label">地区选择</text>
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <view class="picker">
+            {{region[0]}}-{{region[1]}}-{{region[2]}}
+          </view>
+        </picker>
+      </view>
+      <view class="cw-line margin-top20 margin-bottom20"></view>
+
+      <view class="cw-view-row">
+        <text class="name-input-label">行业选择</text>
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+          <view class="picker txt-ltcolor">
+            {{multiArray[0][multiIndex[0]]}}-{{multiArray[1][multiIndex[1]]}}
+          </view>
+        </picker>
+      </view>
+      <view class="cw-line margin-top20 margin-bottom20"></view>
+
+      <view class="cw-view-row">
+        <text class="name-input-label">上传组织机构代码证</text>
+        <image src="{{img_url}}" class="up-img" bindtap='uploadPic'/>
+      </view>
+
+    </view>
+    <view class='v-pad-40'>
+      <button type='primary' form-type='submit'>注册申请</button>
+    </view>
+  </form>
+
+</view>

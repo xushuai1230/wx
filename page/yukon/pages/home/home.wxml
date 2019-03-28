@@ -1,0 +1,56 @@
+<view class="page-main">
+
+  <view class="page-verline">
+  </view>
+
+  <view class="page-out">
+
+    <view class="page-out1">
+      <view class="page-out2" bindtap="goToOrder">
+        <view class="page-out3">
+          <view>
+            <image class="page_pic_h2" mode="aspectFit" src="../../../../image/od1.png"></image>
+          </view>
+          <view>
+            <text class="page_text_h2">订单</text>
+          </view>
+        </view>
+      </view>
+      <view class="page-out2" bindtap="goToSource">
+        <view class="page-out3">
+          <view>
+            <image class="page_pic_h2" mode="aspectFit" src="../../../../image/od4.png"></image>
+          </view>
+          <view>
+            <text class="page_text_h2">资源</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="page-out1">
+      <view class="page-out2" bindtap="goToAbility">
+        <view class="page-out3">
+          <view>
+            <image class="page_pic_h2" mode="aspectFit" src="../../../../image/od3.png"></image>
+          </view>
+          <view>
+            <text class="page_text_h2">能力分析</text>
+          </view>
+        </view>
+      </view>
+       <view class="page-out2" bindtap="goToStock">
+        <view class="page-out3">
+          <view>
+            <image class="page_pic_h2" mode="aspectFit" src="../../../../image/od2.png"></image>
+          </view>
+          <view>
+            <text class="page_text_h2">库存趋势</text>
+          </view>
+        </view>
+      </view> 
+    </view>
+
+  </view>
+
+</view>

@@ -1,0 +1,38 @@
+<view class="page-login-form0">
+  <view class="page-login-form">
+    <view class="cw-view-row">
+      <text class="cw-text-lg cw-text-primary cw-text-bold">企业认证</text>
+    </view>
+    <view class="cw-view-row">
+      <text class="text-tip">认证后，可以一直使用小程序提供的服务。</text>
+    </view>
+    <view class="margin-top20 margin-bottom20"></view>
+  </view>
+
+  <form bindsubmit="regoperate">
+    <view class="page-login-form2">
+
+      <view class="cw-view-row">
+        <text class="name-input-label">公司名</text>
+        <input class="name-input-text" bindinput="companyInput" maxlength='25' placeholder="请输入公司名" name="comy" type="text" />
+      </view>
+      <view class="cw-line margin-top20 margin-bottom20"></view>
+
+      <view class="cw-view-row">
+        <text class="name-input-label">组织机构代码</text>
+        <input class="name-input-text" bindinput="codeInput" maxlength='35' placeholder="请输入组织机构代码" name="urid" type="number" />
+      </view>
+      <view class="cw-line margin-top20 margin-bottom20"></view>
+
+      <view class="cw-view-row">
+        <text class="name-input-label">上传组织机构代码证</text>
+        <image src="{{img_url}}" class="up-img" bindtap='uploadPic'/>
+      </view>
+
+    </view>
+    <view class='v-pad-40'>
+      <button type='primary' form-type='submit'>提交</button>
+    </view>
+  </form>
+
+</view>

@@ -1,0 +1,67 @@
+<view class="cw-view-column">
+  <view class="page-order">
+    <view class="page-order-1">
+      <view class="page-order-11" style="position:relative">
+        <view class="page-order-12"></view>
+        <view>
+          <text class="page-order-text-1">报工</text>
+        </view>
+        <!-- <view class="page-order-13" bindtap="addModel">
+          <text class="page-order-text-1">添加</text>
+        </view>
+
+        <view class="page-order-14" bindtap="reload">
+          <text class="page-order-text-1">刷新</text>
+        </view> -->
+        <view class="page-order-13" bindtap="scanCode">
+          <text class="page-order-text-1">扫码</text>
+        </view>
+          <!-- <view class="page-order-14" bindtap="searchTap">
+          <text class="page-order-text-2">搜索</text>
+        </view>
+
+        <view class="page-order-15">
+          <input class="name-input-text" bindinput="sourceInput" maxlength='15' placeholder="输入订单号" confirm-type="search" type="text" />
+        </view>   -->
+
+        <!-- <view class="page-order-14" bindtap="schedule">
+          <text class="page-order-text-1">排程</text>
+        </view> -->
+        <!-- <view class="page-order-15" bindtap="reload">
+          <text class="page-order-text-1">刷新</text>
+        </view> -->
+
+      </view>
+    </view>
+
+   <view class='view-none' hidden='{{noneHidden}}'>
+      <text class="page-order-text-22">还没有数据.</text>
+    </view>
+
+    <view class="page-order-2">
+
+      <scroll-view scroll-top="{{scrollTop}}" style="height:{{scrollHeight}}px;" scroll-y class="cw-view-column" bindscrolltoupper="refresh" bindscrolltolower="loadmore" bindscroll="scroll">
+        <view class="item" wx:for="{{list}}">
+
+        <view class="icon-box" bindtap="goToDetail" data-code="{{item.Code}}"  data-id="{{item.ID}}"  data-item="{{item.Item}}"  data-status="{{item.Type}}"  data-order="{{item.Code}}"  data-plannum="{{item.Amount}}">
+            <image class="icon-box-img" style="width: 80rpx; height: 80rpx; " mode="aspectFit" src="../../../../image/order.png"></image>
+            <view class="icon-box-ctn">
+              <view class="icon-box-title">ID号:{{item.Code}}</view>
+              <view class="icon-box-desc">{{item.Item}} 计划数量{{item.Amount}}</view>
+            </view>
+          </view>
+
+        </view>
+
+      </scroll-view>
+
+      <view class="body-view">
+        <loading hidden="{{hidden}}" bindchange="loadingChange">
+          加载中...
+        </loading>
+      </view>
+
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,158 @@
+<view class="cw-view-column">
+  <view class="page-order">
+    <view class="page-order-1">
+      <view class="page-order-11">
+        <view class="page-order-12"></view>
+        <view>
+          <text class="page-order-text-1">供货计划</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="page-order-2">
+      <view class="cw-view-column">
+
+        <modal hidden="{{hiddenmodalput}}" title="请输入延期时间" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+          <picker class="cw-text-sm" mode="date" value="{{date}}" start="" end="2021-12-15" bindchange="bindDateChange">
+            <view class="weui-input cw-text-md text-red">{{date}}</view>
+          </picker>
+        </modal>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm cw-text-bold">供应商</text>
+          <text class="cw-text-sm cw-view-margin-left-sm cw-view-margin-top-sm">{{kehu}}</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm cw-text-bold">当天供料计划</text>
+        </view>
+
+        <view class="item" wx:for="{{list}}">
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm cw-text-bold margin-lf-100">明细{{index}}</text>
+          </view>
+
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm margin-lf-100">订单号</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.Code}}</text>
+          </view>
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">物品名</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.Item}}</text>
+          </view>
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">数量</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.Amount}}</text>
+          </view>
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">计划供货时间</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.PlanStartTime}}</text>
+          </view>
+
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm margin-lf-100">计划结束时间</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.LastCompleteTime}}</text>
+            <text class="page-order-text-22" bindtap='modalinput' data-yid='{{item.ID}}' data-id='{{item.Code}}' data-item='{{item.Item}}' data-num='{{item.Amount}}'>延期</text>
+          </view>
+
+        </view>
+
+        <view class='view-none' hidden='{{noneHidden1}}'>
+          <text class="page-order-text-2">没有数据.</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm cw-text-bold">明天供料计划</text>
+        </view>
+
+        <view class="item" wx:for="{{list1}}" hidden='{{v_visi}}'>
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm cw-text-bold  margin-lf-100 ">明细{{index}}</text>
+          </view>
+
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">订单号</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.Code}}</text>
+          </view>
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">物品名</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.Item}}</text>
+          </view>
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">数量</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.Amount}}</text>
+          </view>
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">计划供货时间</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.PlanStartTime}}</text>
+          </view>
+          <view class="cw-view-row  cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">计划结束时间</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.PlanEndTime}}</text>
+            <text class="page-order-text-22" bindtap='modalinput' data-id='{{item.Code}}' data-item='{{item.Item}}' data-num='{{item.Amount}}'>延期</text>
+          </view>
+
+        </view>
+
+        <view class='view-none' hidden='{{noneHidden2}}'>
+          <text class="page-order-text-2">没有数据.</text>
+        </view>
+
+        <view class="view-item2" hidden='{{v_open}}' bindtap='openTap'>
+          <text class="cw-text-sm cw-view-margin-left-sm">展开</text>
+        </view>
+
+        <view class="view-item2" hidden='{{v_close}}' bindtap='closeTap'>
+          <text class="cw-text-sm cw-view-margin-left-sm">收起</text>
+        </view>
+
+        <view class="view-item">
+          <text class="cw-text-md cw-view-margin-left-sm cw-view-margin-top-sm cw-text-bold">3-5天供料计划</text>
+        </view>
+
+        <view class="item" wx:for="{{list2}}" hidden='{{v_visi2}}'>
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm cw-text-bold  margin-lf-100 ">明细{{index}}</text>
+          </view>
+
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">订单号</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.Code}}</text>
+          </view>
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">物品名</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.Item}}</text>
+          </view>
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">数量</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.Amount}}</text>
+          </view>
+          <view class="cw-view-row cw-view-margin-vertical cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">计划供货时间</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.PlanStartTime}}</text>
+          </view>
+          <view class="cw-view-row  cw-view-border-bottom-sm cw-view-padding-bottom-sm cw-view-padding-left-sm">
+            <text class="cw-text-sm  margin-lf-100">计划结束时间</text>
+            <text class="cw-text-sm cw-view-padding-left-sm">{{item.PlanEndTime}}</text>
+            <text class="page-order-text-22" bindtap='modalinput' data-id='{{item.Code}}' data-item='{{item.Item}}' data-num='{{item.Amount}}'>延期</text>
+          </view>
+
+        </view>
+
+        <view class='view-none' hidden='{{noneHidden3}}'>
+          <text class="page-order-text-2">没有数据.</text>
+        </view>
+
+        <view class="view-item2" hidden='{{v_open2}}' bindtap='openTap2'>
+          <text class="cw-text-sm cw-view-margin-left-sm">展开</text>
+        </view>
+
+        <view class="view-item2" hidden='{{v_close2}}' bindtap='closeTap2'>
+          <text class="cw-text-sm cw-view-margin-left-sm">收起</text>
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+</view>

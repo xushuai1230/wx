@@ -1,0 +1,200 @@
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.swiper_box {
+  /* width: 90%;
+  margin: 10% 5%;
+  height: 80%; */
+  width: 100%;
+  height: 100%;
+}
+
+/* swiper-item image {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  height: 100%;
+}  */
+
+.swiper-container .dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-container .btns {
+  width: 30%;
+  position: absolute;
+  left: 35%;
+  right: 0;
+  bottom: 90rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-container .checks {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 35rpx;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+}
+
+.swiper-container .dots .dot {
+  margin: 0 8rpx;
+  width: 14rpx;
+  height: 14rpx;
+  background: #55b19a;
+  border-radius: 50%;
+  transition: all 0.6s;
+  opacity: 0.5;
+}
+
+.swiper-container .dots .dot.active {
+  width: 14rpx;
+  opacity: 1;
+}
+
+.btn-home {
+  width: 100%;
+  height: 65rpx;
+  margin: auto auto;
+  line-height: 65rpx;
+  font-size: 32rpx;
+  text-align: center;
+  background: #038002;
+  color: #fff;
+  border-radius: 15rpx;
+}
+
+.min-chek {
+  font-size: 23rpx;
+  margin-left: 10rpx;
+}
+
+.chk-img {
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.checks-bx {
+  width: 28rpx;
+  height: 28rpx;
+  border: 1rpx solid #999;
+  border-radius: 5rpx;
+  flex-direction: row;
+  display: flex;
+}
+
+.gd-img1 {
+  width: 100%;
+  margin: 10rpx auto;
+}
+
+.v-img {
+  width: 85%;
+  margin: 10rpx auto;
+
+}
+
+.gd-txt0 {
+  font-size: 28rpx;
+  width: 88%;
+  margin: 10rpx auto;
+}
+
+.gd-txt1 {
+  font-size: 28rpx;
+  width: 88%;
+  margin: 10rpx auto;
+}
+
+.gd-txt2 {
+  font-size: 28rpx;
+  width: 88%;
+  margin: 10rpx auto;
+  margin-top: 50rpx;
+}
+
+.gd-txt3 {
+  font-size: 25rpx;
+  width: 88%;
+  margin: 5rpx auto;
+}
+
+.gd-txt4 {
+  font-size: 25rpx;
+  width: 88%;
+  margin: 10rpx auto;
+  padding-left: 50rpx;
+}
+
+.gd-txt5 {
+  font-size: 25rpx;
+  width: 88%;
+  margin: 10rpx auto;
+  margin-bottom: 80rpx;
+}
+
+.gd-txt6 {
+  font-size: 28rpx;
+  width: 88%;
+  margin: 40rpx auto 10rpx auto;
+}
+
+.page0 {
+  width: 96%;
+  margin: 2% 2% 0 2%;
+  height: 90%;
+  flex-direction: column;
+  display: flex;
+  position: absolute;
+}
+ 
+.page1 {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+} 
+
+.page_11 {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  flex-direction: column;
+  display: flex;
+}
+
+.page-section-spacing {
+  height: 90%;
+  width: 90%;
+  margin: 5% auto;
+}
+
+.scroll-view_H {
+  white-space: nowrap;
+}
+
+.scroll-view-item {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+.scroll-view-item_H {
+  display: inline-block;
+  width: 100%;
+  height: 300rpx;
+}

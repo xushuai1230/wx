@@ -1,0 +1,85 @@
+<view class="page-main">
+
+  <view class="page-verline">
+  </view>
+
+  <view class="page-out">
+
+    <view class="page-out1">
+      <view class="page-out2" bindtap="goToOrder1">
+        <view class="page-out3">
+          <view>
+            <image class="page_pic_h2" mode="aspectFit" src="../../../../../image/od1.png"></image>
+          </view>
+          <view>
+            <text class="page_text_h2">销售订单</text>
+          </view>
+        </view>
+      </view>
+      <view class="page-out2" bindtap="goToOrder2">
+        <view class="page-out3">
+          <view>
+            <image class="page_pic_h2" mode="aspectFit" src="../../../../../image/od4.png"></image>
+          </view>
+          <view>
+            <text class="page_text_h2">制造订单</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="page-out1">
+      <view class="page-out2" bindtap="goToOrder3">
+        <view class="page-out3">
+          <view>
+            <image class="page_pic_h2" mode="aspectFit" src="../../../../../image/od3.png"></image>
+          </view>
+          <view>
+            <text class="page_text_h2">紧急插单</text>
+          </view>
+        </view>
+      </view>
+       <view class="page-out2" bindtap="goToOrder4">
+        <view class="page-out3">
+          <view>
+            <image class="page_pic_h2" mode="aspectFit" src="../../../../../image/od2.png"></image>
+          </view>
+          <view>
+            <text class="page_text_h2">交期答复</text>
+          </view>
+        </view>
+      </view> 
+    </view>
+
+
+
+    <view class="page-out1">
+        <view class="page-out2">
+          <picker bindchange="bindPickerChange" range="{{array}}">
+            <view class="page-out3">
+              <view>
+                <image class="page_pic_h2" mode="aspectFit" src="../../../../../image/pc.png"></image>
+              </view>
+              <view>
+                <text class="page_text_h2">排程</text>
+              </view>
+            </view>
+          </picker>
+        </view>
+
+      <view class="page-out2" bindtap="goToOrder5">
+        <view class="page-out3">
+          <view>
+            <image class="page_pic_h2" mode="aspectFit" src="../../../../../image/od4.png"></image>
+          </view>
+          <view>
+            <text class="page_text_h2">试排结果</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+
+</view>

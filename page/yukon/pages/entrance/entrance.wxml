@@ -1,0 +1,29 @@
+<view class="page-login-form0">
+
+  <view class="page-login-form">
+    <view class="cw-text-center">
+      <text class="cw-text-lg cw-text-primary cw-text-bold">永凯iMC</text>
+    </view>
+    <view class="cw-text-center">
+      <text class="text-tip">您所需要的iMC微应用都在这里。</text>
+    </view>
+    
+    <view class="cw-text-center">
+      <image class='entr-img' mode="aspectFit" src="../../../../image/entr.png"></image>
+    </view>
+
+  </view>
+
+  <view class='v-login'>
+    <button type='primary' bindtap='goLogin' class='btn-login' bindlongpress='debug'>用户登录</button>
+  </view>
+
+  <view class='v-reg'>
+    <button type='primary' plain="true" class='btn-reg' bindtap='goReg'>快速体验</button>
+  </view>
+
+
+  <view class='v-more cw-text-center'>
+    <text class='btn-more' bindtap='goMore'>更多功能</text>    
+  </view>
+</view>

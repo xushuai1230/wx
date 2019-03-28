@@ -1,0 +1,86 @@
+{
+  "pages": [
+    "page/yukon/pages/entrance/entrance",
+    "page/yukon/pages/regbegin/regbegin",
+    "page/yukon/pages/guide/guide",
+    "page/yukon/pages/supply/supply_detail/supply_detail",
+    "page/yukon/pages/regend/regend",
+    "page/yukon/pages/main/main",
+    "page/yukon/pages/order/order_add/order_add",
+    "page/yukon/pages/danger/danger",
+    "page/yukon/pages/login/login",
+    "page/yukon/pages/resource/resource_detail/resource_detail",
+    "page/yukon/pages/resource/resource",
+    "page/yukon/pages/user/user",
+    "page/yukon/pages/order/order",
+    "page/yukon/pages/user/user_detail/user_detail",
+    "page/yukon/pages/order/order_detail/order_detail",
+    "page/yukon/pages/verify/verify",
+    "page/yukon/pages/material/material_home",
+    "page/yukon/pages/material/material",
+    "page/yukon/pages/tryuse/tryuse",
+    "page/yukon/pages/jieshao/jieshao",
+    "page/yukon/pages/readme/readme",
+    "page/yukon/pages/home/home",
+    "page/yukon/pages/usercenter/usercenter",
+    "page/yukon/pages/huodong/huodong",
+    "page/yukon/pages/supply/supply",
+    "page/yukon/pages/supply/supply_home",
+    "page/yukon/pages/home/stock_home/stock_home",
+    "page/yukon/pages/home/source_home/source_home",
+    "page/yukon/pages/home/order_home/order_home",
+    "page/yukon/pages/home/ability_home/ability_home",
+    "page/yukon/pages/order/order_home/order_home",
+    "page/yukon/pages/material/material_detail/material_detail",
+    "page/yukon/pages/danger/danger_detail/danger_detail",
+    "page/yukon/pages/danger/danger_info/danger_info",
+    "page/yukon/pages/dailywork/dailywork",
+    "page/yukon/pages/baogong/baogong",
+    "page/yukon/pages/danger/danger_order_detail/danger_order_detail",
+    "page/yukon/pages/danger/danger_source_detail/danger_source_detail",
+    "page/yukon/pages/baogong/notice/notice",
+    "page/yukon/pages/work/work",
+    "page/yukon/pages/work/workbegin/workbegin",
+    "page/yukon/pages/baogong/list/list",
+    "page/yukon/pages/danger/danger_source_detail_detail/danger_source_detail_detail"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "永凯软件",
+    "navigationBarBackgroundColor": "#24292D",
+    "backgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#1AAD19",
+    "borderStyle": "black",
+    "backgroundColor": "#EBE9EB",
+    "list": [
+      {
+        "pagePath": "page/yukon/pages/main/main",
+        "iconPath": "image/mhome.png",
+        "selectedIconPath": "image/phome.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "page/yukon/pages/huodong/huodong",
+        "iconPath": "image/mact.png",
+        "selectedIconPath": "image/pact.png",
+        "text": "活动"
+      },
+      {
+        "pagePath": "page/yukon/pages/usercenter/usercenter",
+        "iconPath": "image/mme.png",
+        "selectedIconPath": "image/pme.png",
+        "text": "我"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 60000,
+    "connectSocket": 60000,
+    "uploadFile": 60000,
+    "downloadFile": 60000
+  },
+  "debug": false
+}
